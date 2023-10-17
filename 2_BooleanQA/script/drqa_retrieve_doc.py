@@ -131,5 +131,5 @@ def retrive_doc_para(queries, candidates=None, top_n=1, n_docs=5):
         articleId+=1
     f.close()
    
-print("Running drqa retrive_doc_para ................................")
+print("Running retrive_doc_para ................................")
 retrieve_doc("your_path/boolQA/data/trex.json")

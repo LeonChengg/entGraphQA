@@ -1,13 +1,9 @@
 import nltk
 import json
 import random
-#from allennlp.predictors.predictor import Predictor 
-#import spacy
-#import neuralcoref
 import os
-# os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-# print(os.environ["THEANO_FLAGS"])
+
 
 def findAllFile(base):
     path_list = []
@@ -47,8 +43,6 @@ def run():
     # take random articles 15843
     #L = random.sample(output, 4000)
     raw = build_raw_crawl(output[0:-1], "crawl")
-    #for i in raw:
-    #    print(i)
     print(len(raw))
     
 run()
